@@ -1,10 +1,18 @@
 <?php
+require 'config.php';
+?>
 
-$pdo = new PDO("mysql:dbname=crud;hostlocalhost:3306", "root", "");
+<article>
+    <h1>Lista de usuários</h1>
 
-$sql = $pdo->query("SELECT * FROM usuario");
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Editar/Deletar</th>
+        </tr>
+    </table>
 
-$dados = $sql->fetchAll();
-
-echo '<pre>';
-print_r($dados);
+    <a href="cadastrar.php">Cadastrar</a>
+</article>
