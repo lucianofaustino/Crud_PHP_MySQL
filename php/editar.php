@@ -25,8 +25,6 @@ if ($id) {
     <form method="POST" action="editar_dados.php">
 
         <input type="hidden" name="id" value=" <?= $id; ?>">
-        
-
         <label for="nome">Nome</label>
         <input id="nome" name="nome" type="text" value=" <?= $usuario['nome']; ?>">
         <label for="email">E-mail</label>
